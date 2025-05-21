@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Defining important info and linking page to css file -->
+        <meta charset="utf-8">
+        <title>HTTP Info</title>
+        <meta name="description" content="An in-depth guide to HTTPS, HTML and CSS.">
+        <link rel="stylesheet" href="style.css">
+        
+        <style>
+            
+        </style>                
+        
+    </head>
+    
+        <!-- Body of HTML - The part that is seen -->
+    <body>
+        <!-- Nav bar to organise hyperlinks, linking all pages together -_- -->
+        <div id="nav">
+            <a href="index.html">What is HTTP and HTTPS?</a>
+            <a href="howDownload.html">How is a web page downloaded?</a>
+            <a href="whatReq.html">What is a request?</a>
+            <a href="whenGet.html">When to use GET and POST?</a>
+        </div>
+        
+        
+    <h1>What is HTTP and HTTPS</h1>
+
+        <!-- Using ID to group together main elements and style them all at once -->
+        <div id="content">
+            <div>
+                <h2>What is HTTP</h2>
+                <p><center class="text">HTTP <span style="color: #2b2b2b; font-weight: 600">(Hypertext Transfer Protocol)</span> is like a language that helps web browsers and web servers talk to each other. When you type a website address in your browser, it sends a message (HTTP request) to the server hosting that website, asking for the content you want to see. The server replies with the requested content (HTTP response), and your browser shows it to you. HTTP is the technology that makes it possible for you to access and use websites on the internet, like a bridge connecting your browser and the web server. It's an essential part of how the internet works and allows you to browse websites and enjoy online content.</center></p>
+            </div>
+            
+            <!-- Responsive image -->
+            <picture>
+                <source media="(max-width: 1000px)" srcset="images/httpS.png"> 
+                <source media="(max-width: 1499px)" srcset="images/httpM.png"> 
+                <source media="(min-width: 1500px)" srcset="images/httpL.png"> 
+                <img src="images/httpM.png" alt="http protocol">
+            </picture>
+
+            
+            <div>
+                <h2>What is HTTPS</h2>
+                <!-- I dont like span at all -_- -->
+                <p><center class="text">HTTPS <span style="color: #2b2b2b; font-weight: 600">(Hypertext Transfer Protocol Secure)</span> is a safer and more secure version of HTTP, the language websites use to talk to web browsers. It's like a secret code that protects the information sent between your browser and the website's server. When you visit a website with HTTPS, it means your connection is encrypted, like putting your information in a locked box before sending it. This makes it much harder for bad people to steal your sensitive data, like passwords or credit card details. So, when you see that little padlock icon in your browser's address bar, it means you're on a secure website, and your information is being kept safe. HTTPS helps keep your online experience safer and more private.</center></p>
+            </div>
+            
+            <!-- Responsive image -->
+            <picture>
+                <source media="(max-width: 1000px)" srcset="images/httpsS.png"> 
+                <source media="(max-width: 1499px)" srcset="images/httpsM.png"> 
+                <source media="(min-width: 1500px)" srcset="images/httpsL.png"> 
+                <img src="images/httpsM.png" alt="https protocol">
+            </picture>
+            
+            <div style="padding-top: 0px;">
+                <h2>Difference between HTTP and HTTPS</h2>
+                <!-- I dont like span at all -_- -->
+                <p><center class="text">The main difference between HTTP and HTTPS lies in their level of security. HTTP is like sending information without any protection, like writing a letter on a postcard for everyone to see. But HTTPS is like sending that information in a locked envelope so that only the intended recipient can read it. HTTPS adds a security layer, making it much safer for sharing sensitive data online, like passwords and credit card numbers. When you see a padlock symbol in your browser's address bar, it means you're using HTTPS, and your connection is secure.</center></p>    
+            </div>
+        </div>
+        
+        <!-- If a footer was required, content would go in here -->
+        <div id="footer">
+        </div>
+
+        
+    </body>
+</html>

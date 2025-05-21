@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Defining important info and linking page to css file -->
+        <meta charset="utf-8">
+        <title>HTTP Info</title>
+        <meta name="description" content="An in-depth guide to HTTPS, HTML and CSS.">
+        <link rel="stylesheet" href="style.css">
+        
+        <style>
+            
+        </style>
+    </head>
+    
+        <!-- Body of HTML - The part that is seen -->
+    <body>
+        <!-- Nav bar to organise hyperlinks, linking all pages together -_- -->
+        <div id="nav">
+            <a href="index.html">What is HTTP and HTTPS?</a>
+            <a href="howDownload.html">How is a web page downloaded?</a>
+            <a href="whatReq.html">What is a request?</a>
+            <a href="whenGet.html">When to use GET and POST?</a>
+        </div>
+        
+        
+    <h1>What is a request</h1>
+        
+        <!-- Using ID to group together main elements and style them all at once -->
+        <div id="content">
+            <h2>Format of a HTTP request</h2>
+            <p class="text">Think of an HTTP request as a message that your computer sends to a website when you want to see a webpage or do something on that site. This message has a specific structure:</p>
+            
+            <ol class="text">
+                <li>Start Line: Imagine this as the main heading of your message. It says what you want and where you want it from.</li>
+                <li>Details: Think of these as extra notes you attach to your message to give more information.</li>
+                <li>Extras (Optional): These are like optional attachments you add to your message.</li>
+                <li>Extra Information (Optional): Sometimes you need to provide more details about what you want to do. This is like adding more pages to your message.</li>
+            </ol>
+            
+            <p class="text">And that's it! An easy way to visualise this is the image below.</p>
+            
+            <!-- Responsive image -->
+            <picture>
+                <source media="(max-width: 1000px)" srcset="images/requestS.png"> 
+                <source media="(max-width: 1499px)" srcset="images/requestM.png"> 
+                <source media="(min-width: 1500px)" srcset="images/requestL.png"> 
+                <img src="images/requestM.png" style="width: 50%" alt="http request">
+            </picture>
+            
+            <!-- Organised table -->
+            <table>
+              <tr>
+                <th>Request Line</th>
+                <th>Request Headers</th>
+                <th>Request Body Message</th>
+              </tr>
+              <tr>
+                <td>GET /doc/test.html HTTP/1.1</td>
+                <td>HOST: www.test101.com</td>
+                <td>bookId=12345</td>
+              </tr>
+                <tr>
+                <td>POST /software/htp/cics/index.html HTTP/1.1</td>
+                <td>Content-Type: text/html; charset=UTF-8</td>
+                <td>Message=xyz</td>
+              </tr>
+            </table>
+        </div>
+        
+        <!-- If a footer was required, content would go in here -->
+        <div id="footer">
+        </div>
+
+        
+    </body>
+</html>
